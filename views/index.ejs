@@ -1,0 +1,14 @@
+---
+layout: main.ejs
+---
+
+<h1 class="lg:text-8xl text-4xl mb-12">gabriel davison</h1>
+<div class="posts">
+  <% collections.posts.reverse().forEach((post, i) => { %>
+  <section class="mt-6 max-w-6xl"><%- post.templateContent %></section>
+  <br />
+  <span><%= post.date.toUTCString() %></span>
+  <% if (i !== (collections.posts.length -1)){ %>
+  <div class="mt-6 mb-6">- - - - - - - - - -</div>
+  <%}%> <% }) %>
+</div>

@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .change {
+    color: transparent;
+  }
+}
+
+.posts h1 {
+  @apply lg:text-4xl
+}
+
+.posts video {
+  @apply mt-6 mb-6
+}
+
+a {
+  @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-600
+}

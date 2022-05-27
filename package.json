@@ -1,0 +1,19 @@
+{
+  "name": "gabrieldavison.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "dev": "eleventy --serve & npx tailwindcss -i styles/tailwind.css -c styles/tailwind.config.js -o dist/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
